@@ -1,6 +1,6 @@
 {
   "name": "@mentorkadriu/vue-tiny-slider",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "author": "Mentor Kadriu",
   "main": "./dist/vue-tiny-slider.common.js",
   "scripts": {
