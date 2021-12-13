@@ -6,7 +6,10 @@ npm install @mentorkadriu/vue-tiny-slider
 ```
 ## Usage
 
-More usage options can be found in the [/src/demos](https://mentorkadriu.github.io/vue-tiny-slider/src/demos/).
+More usage options can be found in the:
+- [Full demos](https://vue-tiny-slider.vercel.app/)
+- [/src/demos](https://mentorkadriu.github.io/vue-tiny-slider/src/demos/).
+- [stackblitz.com](https://stackblitz.com/edit/vue-z2kxue)
 
 ```vue
 <script>

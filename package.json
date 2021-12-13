@@ -4,7 +4,9 @@
     "type": "git",
     "url": "https://github.com/mentorkadriu/vue-tiny-slider.git"
   },
-  "version": "0.1.6",
+  "version": "0.1.7",
+  "description": "Vue 3 component for tiny-slider",
+  "keywords": ["vue", "tiny-slider", "slider", "carousel", "vue3"],
   "author": "Mentor Kadriu",
   "main": "./dist/vue-tiny-slider.common.js",
   "scripts": {
