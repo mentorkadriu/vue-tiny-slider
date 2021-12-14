@@ -21,7 +21,12 @@ export default {
       slider.value.getSlider().goTo(toSlide.value);
     }
 
+    function onIndexChange(info) {
+      console.log(info);
+    }
+
     return {
+      onIndexChange,
       sliderOptions,
       slider,
       goToSlide,
@@ -37,7 +42,7 @@ export default {
     Go to slide: <input type="text" v-model="toSlide" />
     <button class="button" @click="goToSlide">Go</button>
   </div>
-  <VueTinySlider :options="sliderOptions" ref="slider">
+  <VueTinySlider :options="sliderOptions" ref="slider" @indexChanged="onIndexChange">
     <Slides />
   </VueTinySlider>
   <div class="slider-options">

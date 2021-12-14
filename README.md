@@ -1,5 +1,13 @@
 # vue-tiny-slider
 
+
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Demo](#demo)
+* [Development](#development)
+
 ## Installation
 ```
 npm install @mentorkadriu/vue-tiny-slider
@@ -8,7 +16,7 @@ npm install @mentorkadriu/vue-tiny-slider
 
 More usage options can be found in the:
 - [Full demos](https://vue-tiny-slider.vercel.app/)
-- [/src/demos](https://mentorkadriu.github.io/vue-tiny-slider/src/demos/).
+- [/src/demos](https://github.com/mentorkadriu/vue-tiny-slider/tree/main/src/demos).
 - [stackblitz.com](https://stackblitz.com/edit/vue-z2kxue)
 
 ```vue
@@ -32,8 +40,14 @@ More usage options can be found in the:
       // Get slider instance
       console.log(slider.value.getSlider());
     });
+
+
+    function onIndexChange(info) {
+      console.log(info);
+    }
     
     return {
+      onIndexChange,
       options,
       slider,
     };
@@ -42,14 +56,13 @@ More usage options can be found in the:
 </script>
 
 <template>
-  <VueTinySlider :options="options" ref="slider">
+  <VueTinySlider :options="options" ref="slider" @indexChanged="onIndexChange">
     <div>Slide #1</div>
     <div>Slide #2</div>
     <div>Slide #3</div>
   </VueTinySlider>
 </template>
 ```
-
 ## Development
 
 ### Setup
